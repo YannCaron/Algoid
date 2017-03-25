@@ -1,0 +1,13 @@
+syntax: glob
+.DS_Store
+\.hgignore
+\.sonar
+build
+dist
+manifest\.mf
+sonar-project\.properties
+sonnar-runner\.bat
+TEST-fr\.cyann\.al\.integrationTest\.ArithmeticTest\.xml
+.orig
+.orig
+*.orig

@@ -1,0 +1,9 @@
+syntax: glob
+.DS_Store
+\.sonar
+build
+dist
+manifest\.mf
+sonar-project\.properties
+sonnar-runner\.bat
+TEST-fr\.cyann\.jasi\.ast\.FunctionCallTest\.xml
