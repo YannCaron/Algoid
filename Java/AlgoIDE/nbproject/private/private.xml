@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
+        <file>
+            <url>src/fr/cyann/algoide/MainPanel.java</url>
+            <line>475</line>
+        </file>
+        <file>
+            <url>src/fr/cyann/algoide/algo/shapes/Line.java</url>
+            <line>28</line>
+        </file>
+    </editor-bookmarks>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0">
+        <file>
+            <url>src/fr/cyann/algoide/MainPanel.java</url>
+            <bookmark id="0">
+                <name/>
+                <line>478</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/fr/cyann/algoide/algo/shapes/Line.java</url>
+            <bookmark id="0">
+                <name/>
+                <line>28</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group/>
+        <group name="ALScript"/>
+        <group name="Experiments"/>
+        <group name="ALGEA">
+            <file>file:/home/cyann/projects/AlgoidLanguage/ALGOIDE/src/fr/cyann/algoide/panels/ALEditor.java</file>
+        </group>
+        <group name="AL">
+            <file>file:/home/cyann/projects/AlgoidLanguage/ALGOIDE/src/Main.java</file>
+            <file>file:/home/cyann/projects/AlgoidLanguage/ALGOIDE/build.xml</file>
+            <file>file:/home/cyann/projects/AlgoidLanguage/ALGOIDE/src/AlgoIDE.java</file>
+        </group>
+        <group name="Algea"/>
+        <group name="Algoid">
+            <file>file:/home/cyann/projects/java/AlgoIDE/src/fr/cyann/algoide/runtime/TaskManager.java</file>
+            <file>file:/home/cyann/projects/java/AlgoIDE/src/fr/cyann/algoide/MainPanel.java</file>
+        </group>
+    </open-files>
+</project-private>

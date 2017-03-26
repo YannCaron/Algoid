@@ -1,0 +1,62 @@
+# Welcome
+
+Welcome to AlgoIDE project.
+AlgoIDE is an IDE dedicated to teach to kids and beginner how to program.
+
+It use its own language call AL (Algoid Language) syntactically near from industrial standards (like java and javascript) with simplifications and semantically near from Python and Lua.
+
+Enjoy to help me to continue this great project ;-)
+
+# License
+Copyright (C) 2014 Yann Caron aka. cyann
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# Notice and FAQ
+
+* how to add objects to Algoid Language API ?
+Simply add it definition to [AlJavaVM.java file](AlgoIDE / src / fr / cyann / algoide / runtime / ALJavaVM.java) into addFrameworkObjects
+
+The design is based on a template methode on the top of the AST dynamic visitor.
+Then this method is automatically calles and cached by the language runtime when AL script is exécuted.
+
+Then, simply add your Object definition to the astbuilder using the approriate factory :
+
+```
+#!java
+ObjectDeclaration<RuntimeContext> myObject= FactoryUtils.findObject(builder, "myObject");
+```
+
+* how to add a method to the previous object ?
+Simply by adding the declaration to the object as the following code :
+
+```
+#!java
+myObject.addDeclaration(DeclarationFactory.factory("myMethod", new MethodVisitor<Block<RuntimeContext>, RuntimeContext>() {
+  @Override
+    public void visite(Block<RuntimeContext> ast, RuntimeContext context) {
+      int myArg = (int) ast.function.decl.params.get(0).var.mv.getNumber();
+
+      // the method implementation here
+
+, "myArg0"));
+```
+
+Notice that to get arguments into the methode, you have to add a dummy name at the end of the factory call (here "myArg0") and retrive it by number into the parameter collection of the method : ``ast.function.decl.params.get(0).var.mv``
+
+This code will return a MutableVariant. Retreive the data you want with mutable variant methods like getBool, getNumber, getString, getItem, getFunction, getObject and so on.
+
+
+
+Have fun!
