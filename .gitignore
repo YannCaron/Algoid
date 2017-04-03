@@ -30,3 +30,8 @@ Java/AL/.settings/
 Java/JASI/.classpath
 Java/JASI/.project
 Java/JASI/.settings/
+
+# Wings 3d stufs
+*.wings~
+*.wings#
+
