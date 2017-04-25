@@ -34,4 +34,6 @@ Java/JASI/.settings/
 # Wings 3d stufs
 *.wings~
 *.wings#
-
+*.blend1
+*.mtl
+*.obj
