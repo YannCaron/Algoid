@@ -1,2 +1,0 @@
-ant -f publish.xml
-
